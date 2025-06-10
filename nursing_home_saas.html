@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CareConnect Nursing Home SAAS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #002d72;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #004a99;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .dashboard-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.25rem;
+      color: #004a99;
+    }
+    .card p {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    section h2 {
+      border-bottom: 2px solid #004a99;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #002d72;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #004a99;
+      color: white;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .priority-high {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.875rem;
+      display: inline-block;
+    }
+    .priority-medium {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.875rem;
+      display: inline-block;
+    }
+    .priority-normal {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.875rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CareConnect Nursing Home SAAS</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Login</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Residents</a>
+    <a href="#">Staff</a>
+    <a href="#">Insurance</a>
+    <a href="#">Financial</a>
+    <a href="#">Compliance</a>
+    <a href="#">Messaging</a>
+    <a href="#">Reports</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Dashboard Overview</h2>
+      <div class="dashboard-cards">
+        <div class="card">
+          <h3>Total Residents</h3>
+          <p>156</p>
+        </div>
+        <div class="card">
+          <h3>Staff on Duty</h3>
+          <p>24</p>
+        </div>
+        <div class="card">
+          <h3>Pending Tasks</h3>
+          <p>12</p>
+        </div>
+        <div class="card">
+          <h3>Critical Alerts</h3>
+          <p>3</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Recent Activities</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Resident</th>
+            <th>Staff Member</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medication Administered</td>
+            <td>John Smith</td>
+            <td>Nurse Sarah</td>
+            <td>10:30 AM</td>
+          </tr>
+          <tr>
+            <td>Care Plan Updated</td>
+            <td>Mary Johnson</td>
+            <td>Dr. Williams</td>
+            <td>9:45 AM</td>
+          </tr>
+          <tr>
+            <td>Vital Signs Checked</td>
+            <td>Robert Davis</td>
+            <td>Nurse Mike</td>
+            <td>9:15 AM</td>
+          </tr>
+          <tr>
+            <td>Physical Therapy Session</td>
+            <td>Patricia Brown</td>
+            <td>PT James</td>
+            <td>8:30 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Upcoming Tasks</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Assigned To</th>
+            <th>Due Time</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medication Round</td>
+            <td>Nurse Team A</td>
+            <td>11:00 AM</td>
+            <td><span class="priority-high">High</span></td>
+          </tr>
+          <tr>
+            <td>Room Inspections</td>
+            <td>Facility Staff</td>
+            <td>2:00 PM</td>
+            <td><span class="priority-medium">Medium</span></td>
+          </tr>
+          <tr>
+            <td>Group Activity</td>
+            <td>Activities Team</td>
+            <td>3:30 PM</td>
+            <td><span class="priority-normal">Normal</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
